@@ -1,0 +1,8 @@
+$sm: '(min-width: 640px)';
+$lg: '(min-width: 1440px)';
+
+@mixin media($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}

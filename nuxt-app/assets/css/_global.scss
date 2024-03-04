@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'media';
+@import 'reset';
+
+* {
+    font-family: "Gill Sans", sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -$header-height-mobile;
+    visibility: hidden;
+
+    @include media($lg) {
+        top: -$header-height-desktop;
+    }
+}
